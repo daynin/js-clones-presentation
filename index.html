@@ -45,6 +45,7 @@
                       <code data-trim>
 var foo = 1;
 var bar = 2;
+var baz = 3;
                       </code>
                     </pre>
                 </div>
@@ -60,7 +61,7 @@ var foo = 1,
                 <div class="fragment">
                     <pre>
                       <code data-trim>
-var foo = 1
+var  foo = 1
     ,bar = 2
     ,baz = 3;
                       </code>
@@ -68,11 +69,51 @@ var foo = 1
                 </div>
             </section>
             <section>
+                <pre>
+                      <code data-trim>
+var obj = {
+  foo: 1,
+  bar: 2,
+  baz: 3,
+}
+                      </code>
+                </pre>
+                <h3>Или</h3>
+                <pre>
+                      <code data-trim>
+var obj = {
+  foo: 1
+  , bar: 2
+  , baz: 3
+}
+                      </code>
+                </pre>
+            </section>
+            <section>
+                <pre>
+                      <code data-trim>
+x = Boolean(y);
+x = Number(y);
+x = String(y);
+                      </code>
+                </pre>
+                <h3>Или</h3>
+                <pre>
+                      <code data-trim>
+x = !!y;
+x = +y;
+x = '' + y;
+                      </code>
+                </pre>
+            </section>
+            <section>
                 <h3>И в JS много таких вещей</h3>
             </section>
             <section>
-                <h3>Нам нужно добавить проверку стиля по аналогии с JSLint</h3>
-                <h3 class="fragment">(им, я надеюсь, вы уже пользуетесь)</h3>
+                <h3>Нам нужно добавить проверку стиля</h3>
+                <div class="fragment">
+                  <i>JSLint/JSHint частично тоже можно использовать для этого, но, во-первых, у вас и так должен быть JSLint/JSHint, во-вторых, эти инструменты для проверки потенциальных ошибок, а не стиля</i>
+                </div>
             </section>
             <section>
                 <h3>Для этого мы будем использовать <a href="http://jscs.info/">JSCS</a></h3>
@@ -153,19 +194,19 @@ indent_size = 2
                     </pre>
             </section>
             <section>
-              <h3>Данный плагин есть для многих редакторов/ide</h3>
-              <img src="img/editors-ide-1.png" alt="">
+                <h3>Данный плагин есть для многих редакторов/ide</h3>
+                <img src="img/editors-ide-1.png" alt="">
             </section>
             <section>
-              <h3>А многими другими он поддерживается по умолчанию</h3>
-              <img src="img/editors-ide-2.png" alt="">
+                <h3>А многими другими он поддерживается по умолчанию</h3>
+                <img src="img/editors-ide-2.png" alt="">
             </section>
             <section>
-              <h3>Пишите код единообразно и...</h3>
-              <div class="fragment">
-                <h3>ваши волосы станут мягкими и шелковистыми</h3>
-                <img src="img/hair.jpg" alt="">
-              </div>
+                <h3>Пишите код единообразно и...</h3>
+                <div class="fragment">
+                    <h3>ваши волосы станут мягкими и шелковистыми</h3>
+                    <img src="img/hair.jpg" alt="">
+                </div>
             </section>
             <section>
                 <h3>Мои контакты:</h3>
